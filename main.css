@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-evenly;
+    font-size: 20px;
+    letter-spacing: 2px;
+    box-shadow: #888 0px 1px 4px ;
+    background-color: white;
+}
+
+header h4{
+    color: hsl(205, 78%, 60%);
+}
+
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+  margin: 0 10px;  
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+header ul li:hover{
+    color: hsl(205, 78%, 60%);
+}
+
+.bar{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    text-align: center;
+}
+
+.bar h1{
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: white;
+    border-radius: 10px;
+}
+
+.bar > span{
+    border: 2px solid #333;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s linear;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.bar > span:hover{
+    background-color: #222;
+    color: white;
+}
+
+.bar input{
+    padding: 7.5px;
+    border: none;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+    .bar input{
+        transform: translateY(5px);
+    }
+}
+
+.bar input:focus{
+    outline: none;
+}
+
+.nun{
+    display: none;
+}
+
